@@ -6,12 +6,13 @@ module.exports = {
   
   theme: {
     extend: {
+      
       colors: {
         khan :
         {
           50: '#fdfce0',
           100: '#f5f3b9',
-          200: '#eeeb90',
+          200: '#071324',
           300: '#e7e265',
           400: '#e0da3b',
           500: '#c6c122',
@@ -22,9 +23,9 @@ module.exports = {
         },
         navCol :
         {
-          50: '#f5effb',
+          50: '#25383c',
           100: '#dad5df',
-          200: '#bfbac5',
+          200: '#2b3148',
           300: '#a69fad',
           400: '#8c8394',
           500: '#736a7b',
