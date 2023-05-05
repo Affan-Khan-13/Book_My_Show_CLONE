@@ -1,47 +1,35 @@
 import React from "react";
-import { BiChevronRight, BiSearch, BiChevronDown, BiMenu } from "react-icons/bi";
-
-
+import { BiChevronRight, BiSearch, BiChevronDown, BiMenu , BiChevronLeft, BiShareAlt} from "react-icons/bi";
 const NavSm = () => {
 return (
 <>
 <div className="text-white flex items-center justify-between">
+   <div className="w-8 h-8 mt-5">
+      <BiChevronLeft/>
+   </div>
    <div>
       <h3 className="text-xl font-bold">It All Starts Here!</h3>
-      <span className="text-gray-400 text-xs flex items-center">
-         Hyderabad
-         <BiChevronRight />
-      </span>
    </div>
    <div className="w-8 h-8">
-      <BiSearch className="w-full h-full" />
+      <BiShareAlt className="w-full h-full" />
    </div>
 </div>
 </>
 )
 };
-const NavMd = () => {
-return (
-<div className="w-full flex items-center bg-white gap-3 px-3 py-2 rounded-sm">
-   <BiSearch />
-   <input type="search" className="w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities" />
-</div>
-)
-};
+
 const NavLg = () => {
 return (
 <>
 <div className="container mx-auto px-4 flex items-center justify-between">
-   <div className="flex items-center w-1/2 gap-10">
-      <div className="w-40 h-30 pt-4">
+   <div className="flex items-center w-1/2">
+      <div className="w-40 h-30 pt-4 mr-2">
          <img
             src="https://in.bmscdn.com/webin/common/icons/logo.svg"
             alt="logo"
             className="w-full h-full" />
       </div>
-
-
-      <div className="w-full flex items-center bg-white gap-3 px-3 py-2 mt-4 rounded-sm">
+      <div className="w-full flex items-center bg-white gap-3 px-3 py-2 rounded-sm">
          <BiSearch />
          <input type="search" className="w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities" />
       </div>
@@ -49,9 +37,10 @@ return (
 
 
 
+
    <div className="flex items-center gap-3">
    <span className="text-gray-400 text-xs flex items-center hover:text-white cursor-pointer	">
-      Hyderabad
+      Bhubaneswar
       <BiChevronDown />
    </span>
    <button className="bg-red-600 text-white text-sm rounded px-2 py-1">
@@ -65,29 +54,26 @@ return (
 </>
 )
 };
-
-
-
-
-const Navbar = () => {
+const MovieNavbar = () => {
 return (
 <>
-<nav className="bg-navCol-800 px-4 py-2">
-   <div className="md:hidden">
+
+<nav className="bg-navCol-800 px-4 py-2 ">
+      <div className="md:hidden">
       {
-      //Mobile Screen
+      /*Mobile Screen*/
       <NavSm />
       }
    </div>
-   <div className="hidden lg:hidden md:flex">
+   <div className="hidden lg:hidden md:block">
       {
-      //Tablet Screen
-      <NavMd />
+      /*Tablet Screen*/
+      <NavSm />
       }
    </div>
    <div className="hidden lg:flex">
       {
-      //desktop Screen
+      /*desktop Screen*/
       <NavLg />
       }
    </div>
@@ -95,4 +81,4 @@ return (
 </>
 )
 };
-export default Navbar;
+export default MovieNavbar;
