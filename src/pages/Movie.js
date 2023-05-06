@@ -1,6 +1,7 @@
 import React from 'react'
 import MovieHero from '../components/MovieHero/MovieHero.component';
 import {BiCameraMovie} from "react-icons/bi"
+import EntertainmentCardSlider from '../components/Entertainment/Entertainmentcard.component';
 
 const Movie = () => {
   return (
@@ -27,10 +28,23 @@ const Movie = () => {
             <p className="text-gray-600 text-sm">Get Rs.75* off on 3 movies you buy/rent on Stream. Buy Filmy Pass @Rs.99</p>
          </div>
       </div>
+      <div className="my-8"></div>
+      <hr/>
       </div>
+
+      
+      <div className="my-10 container px-4 lg:w-2/3 lg:ml-36">
+      <h1 className="text-gray-800 font-bold text-2xl mb-4">Cast</h1>
+      <EntertainmentCardSlider isMovie />
 
       <div className="my-8"></div>
       <hr/>
+      </div>
+
+      <div className="my-10 container px-4 lg:w-2/3 lg:ml-36">
+      <h1 className="text-gray-800 font-bold text-2xl mb-4">Crew</h1>
+      <EntertainmentCardSlider isMovie/>
+      </div>
     </>
   );
 };
