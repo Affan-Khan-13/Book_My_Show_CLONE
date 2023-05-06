@@ -3,8 +3,6 @@ import EntertainmentCardSlider from '../components/Entertainment/Entertainmentca
 //do not need anymore ---- import PremierComponent from '../components/Premier/Premier.component'
 import PosterSlider from '../components/PosterSlider/PosterSlider.component'
 import TempPosters from '../config/TempPosters.config'
-import EntertainmentImage from "../config/EntertainmentPosters"
-
 const HomePage = () => {
   return (
     <>
