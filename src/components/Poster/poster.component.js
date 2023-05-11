@@ -6,7 +6,7 @@ const Poster = (props) => {
     <>
     <div className="flex flex-col items-start gap-2 px-3">
       <div className="h-80" >
-       <img src={props.src}
+       <img src={props.image}
        alt={props.title} className="w-full h-full rounded-xl"/>
       </div>
       <h3
@@ -18,7 +18,7 @@ const Poster = (props) => {
       className={`text-sm font-bold ${
       props.isDark ? "text-white" : "text-gray-700"
       }`}
-      >{props.subtitle}</p>
+      >{props.year}</p>
     </div>
     </>
   )

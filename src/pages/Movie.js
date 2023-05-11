@@ -1,9 +1,28 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+import axios from 'axios';
 import MovieHero from '../components/MovieHero/MovieHero.component';
 import {BiCameraMovie} from "react-icons/bi"
 import EntertainmentCardSlider from '../components/Entertainment/Entertainmentcard.component';
+import CastImage from '../config/CastPoster';
+import PosterSlider from '../components/PosterSlider/PosterSlider.component';
 
 const Movie = () => {
+   const [movies, setMovies] = useState([]);
+
+   useEffect(() => {
+     const getData = async () => {
+       try {
+         const getImages = await axios.get("/MostPopularMovies/k_015l5c7t");
+         console.log(getImages.data.items);
+         setMovies(getImages.data.items);
+       } catch (error) {
+         console.log(error);
+       }
+     }
+     
+     getData();
+   }, []);
+
   return (
     <>
     <MovieHero/>
@@ -35,7 +54,7 @@ const Movie = () => {
       
       <div className="my-10 container px-4 lg:w-2/3 lg:ml-36">
       <h1 className="text-gray-800 font-bold text-2xl mb-4">Cast</h1>
-      <EntertainmentCardSlider isMovie />
+      <EntertainmentCardSlider images ={CastImage} isMovie />
 
       <div className="my-8"></div>
       <hr/>
@@ -43,8 +62,23 @@ const Movie = () => {
 
       <div className="my-10 container px-4 lg:w-2/3 lg:ml-36">
       <h1 className="text-gray-800 font-bold text-2xl mb-4">Crew</h1>
-      <EntertainmentCardSlider isMovie/>
+      <EntertainmentCardSlider images ={CastImage} isMovie/>
+
+      <div className="my-8"></div>
+      <hr/>
       </div>
+
+      
+    <div className='container mx-auto px-4'>
+      <PosterSlider images={movies.slice(45,60)} title="Outdoor Events" subtitle=""/>
+      <div className="my-8"></div>
+      <hr/>
+   
+    </div>
+
+    <div className='container mx-auto px-4'>
+      <PosterSlider images={movies.slice(60,75)} title="Events Happening Near You" subtitle=""/>
+    </div>
     </>
   );
 };

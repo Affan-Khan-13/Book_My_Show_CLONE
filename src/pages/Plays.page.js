@@ -11,56 +11,56 @@ return (
       <div className="flex flex-wrap">
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />
          </div>
          <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               image="https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxlY0VDQ1JMbUNNY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                title="Tvk Cultural presents Ponniyin Selvan"
                subtitle="Tamil ₹300"
                />

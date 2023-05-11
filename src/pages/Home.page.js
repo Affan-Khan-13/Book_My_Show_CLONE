@@ -1,13 +1,32 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 import EntertainmentCardSlider from '../components/Entertainment/Entertainmentcard.component'
 //do not need anymore ---- import PremierComponent from '../components/Premier/Premier.component'
 import PosterSlider from '../components/PosterSlider/PosterSlider.component'
-import TempPosters from '../config/TempPosters.config'
+//do not need anymore ---- import TempPosters from '../config/TempPosters.config'
+import EntertainmentImage from '../config/EntertainmentPosters'
+
 const HomePage = () => {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const getImages = await axios.get("/MostPopularMovies/k_015l5c7t");
+        console.log(getImages.data.items);
+        setMovies(getImages.data.items);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    
+    getData();
+  }, []);
+
   return (
     <>
      <div className='container mx-auto px-4'>
-      <PosterSlider images={TempPosters} title="Recommended Movies" subtitle=""/>
+      <PosterSlider images={movies.slice(20,35)} title="Recommended Movies" subtitle=""/>
     </div>
 
     <div className='container mx-auto px-4 py-20 cursor-pointer'>
@@ -22,7 +41,7 @@ const HomePage = () => {
         <h1 className='text-2xl font bold text-gray-800 py-3 pt-5'>
              The best of Entertainment
         </h1>
-      <EntertainmentCardSlider/>
+      <EntertainmentCardSlider images={EntertainmentImage}/>
     </div>
 
 
@@ -34,23 +53,23 @@ const HomePage = () => {
         className='w-full h-full'
         />
       </div>
-        <PosterSlider isDark images={TempPosters} title="Primere" subtitle="Brand new release every friday" />
+        <PosterSlider isDark images={movies.slice(30,45)} title="Primere" subtitle="Brand new release every friday" />
       </div>
     </div>
     </div>
 
     <div className='container mx-auto px-4'>
-      <PosterSlider images={TempPosters} title="Outdoor Events" subtitle=""/>
+      <PosterSlider images={movies.slice(45,60)} title="Outdoor Events" subtitle=""/>
     </div>
 
 
     <div className='container mx-auto px-4'>
-      <PosterSlider images={TempPosters} title="Events Happening Near You" subtitle=""/>
+      <PosterSlider images={movies.slice(60,75)} title="Events Happening Near You" subtitle=""/>
     </div>
 
 
     <div className='container mx-auto px-4'>
-      <PosterSlider images={TempPosters} title="Online Events" subtitle=""/>
+      <PosterSlider images={movies.slice(75,90)} title="Online Events" subtitle=""/>
     </div>
     </>
 
